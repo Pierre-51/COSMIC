@@ -7835,8 +7835,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>In Bash, we can use the "exit {non-zero}", to quit the run, following an error and "exit 0", to quit after a success. In order to track them, returning the result of command with a proper indication to a file is an easy solution.
-for example :</p>
+<p>In Bash, we can use the "exit {non-zero}" to quit the run, following an error and "exit 0" to quit after a success. In order to track them, returning the result of command with a proper indication to a file is an easy solution. For example:</p>
 </div>
 </div>
 </div>
@@ -7864,7 +7863,7 @@ for example :</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Looking online for various way of doing it, i found that we could simply use the rafter, like when we write into a file. It would redirect the stderr (2) to a log file next to the stdout (1). Here the 2 represent is a standard error, 1 is the standard output. Example :</p>
+<p>After using my own knowledge and conducting further research, I found that we could simply use the rafter, like when we write into a file. It would redirect the stderr (2) to a log file next to the stdout (1). Here the 2 represents a standard error and 1 represents the standard output. For example:</p>
 </div>
 </div>
 </div>
@@ -7889,7 +7888,7 @@ for example :</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>In Python the use of a logging is recommanded, using logging.error will allow us, in case of error to flag them in the logging file.</p>
+<p>In Python, the use of logging is recommended. Using logging.error will allow us, in case of error, to flag them in the logging file.</p>
 </div>
 </div>
 </div>
@@ -7916,7 +7915,7 @@ for example :</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>With that said, we can still return an error to bash while executing the python script from there. With a try expect scenario, the python script will return 0 on success and 1 in exceptions. We can then in bash catch these errors (or success) codes. For example :</p>
+<p>With that said, we can still return an error to bash while executing the Python script from there. With a try expect scenario, the Python script will return 0 on success and 1 in exceptions. We can then catch these error (or success) codes in bash. For example:</p>
 </div>
 </div>
 </div>
@@ -7958,7 +7957,7 @@ for example :</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Asynchronized command will return a code when the command have start, but an asynchron job can still fail. In order to catch the error, we need to wait for the end of the execution to get the result. These jobs have an id, we can collect this id and througout the script check regulary the status of the job. If we are working on a pipeline, we can instaure rules that will make the next step start only in case of success from the job.</p>
+<p>Asynchronized commands will return a code when the command has started, but an asynchron job can still fail. In order to catch the error, we need to wait for the end of the execution to get the result. These jobs have an id We can collect this id and check the status of the job regularly throughout the script. If we are working on a pipeline, we can establish rules that will make the next step start only when the task has been successful.</p>
 </div>
 </div>
 </div>
@@ -7980,18 +7979,18 @@ for example :</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Code comment is important in every languages, but bash can become foggy using various commands pipe one to others. Keeping a clear and explicit commentary will help anyone working or executing the bash script. Its common to use part of code found online that work, but where we are not explicitly aware of every details, keeping details can help, to efficiently get back to it later on.</p>
+<p>Code comment is important in every language, but bash can become unclear using various commands piped one to others. Keeping a clear and explicit commentary will help anyone working or executing the bash script. It is common to use a part of a code found online that works. However, where we are not explicitly aware of every detail, keeping comments can help to efficiently get back to it later on.</p>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=416f9eaa">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=59318704">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>To write efficient comments, we first need a good header, explaining the purpose of the script, the date, the editor and their info if a reach out is needed. We can also specify how to use it with the differents options that have been implemented. I believe that a clear descriptor of what and why is needed before every step, if some part are less clear we can comment specific command. When leaving a script its always to leave on part we work on what future implementation/improvement are needed.</p>
+<p>To write efficient comments, we first need a good header, explaining the purpose of the script, the date, the editor and their information if we need to contact them. We can also specify how to use the code with the different options that have been implemented. I believe that a clear descriptor of what and why is needed before every step. If some parts are less clear, we can comment specific commands. When we stop editing a script, it is important to note what future implementations/improvements are needed.</p>
 </div>
 </div>
 </div>
@@ -8024,7 +8023,7 @@ for example :</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>For this question, we will first inspect the data, using a jupyter notebook, it will be easier to apply filters and build the final result. In a separate file COSMIC/question2_analysis.py, we can find the function and in COSMIC/test_question2.py we can find the tests.</p>
+<p>For this question, we will first inspect the data. From this, it will be easier to apply filters and build the final result. In a separate file, COSMIC/question2_analysis.py, we can find the function, and in COSMIC/test_question2.py, we can find the tests.</p>
 </div>
 </div>
 </div>
@@ -8229,7 +8228,7 @@ for example :</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>The data as been loaded and we can look at the first results and go through the various colunms. Lets drop the duplicates, in our frist 5 result we already have duplicates, this could affect our count.</p>
+<p>The data has been loaded. We can look at the first results and go through the various columns. In our first 5 results, we already have duplicates which could affect our count. Therefore, we must drop the duplicates.</p>
 </div>
 </div>
 </div>
@@ -8445,7 +8444,7 @@ for example :</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>lets group the mutated from allele and mutated to allele, in front of icgc mutation idc, this should give us the number of unique associated to every possible patern.</p>
+<p>We will group the mutated from allele and mutated to allele, in front of icgc mutation idc. This should give us the number of unique mutations associated to every possible pattern.</p>
 </div>
 </div>
 </div>
@@ -8513,7 +8512,7 @@ Name: icgc_mutation_id, dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We obtain the right result, but we want a different visualisation, we can reset the index and sort the values to break down the grouped columns.</p>
+<p>We have obtained the right result, but we want a different visualisation. We can reset the index and sort the values to break down the grouped columns.</p>
 </div>
 </div>
 </div>
@@ -8677,7 +8676,7 @@ Name: icgc_mutation_id, dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>For this question the logic is close, we deduplicate, one row per (sample, mutation) pair. And then by grouping and counting we can achieve to the extremum.</p>
+<p>For this question the logic is similar. We deduplicate one row per (sample, mutation) pair, and then by grouping and counting, we can find the extrema.</p>
 </div>
 </div>
 </div>
@@ -8874,6 +8873,112 @@ Lowest  unique mutations -&gt; sample: SA514876  count: 14
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<table>
+<thead>
+<tr>
+<th>count_gene_per_chr</th>
+<th>CHROMOSOME</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>51</td>
+<td>1</td>
+</tr>
+<tr>
+<td>25</td>
+<td>2</td>
+</tr>
+<tr>
+<td>31</td>
+<td>3</td>
+</tr>
+<tr>
+<td>20</td>
+<td>4</td>
+</tr>
+<tr>
+<td>25</td>
+<td>5</td>
+</tr>
+<tr>
+<td>16</td>
+<td>6</td>
+</tr>
+<tr>
+<td>19</td>
+<td>7</td>
+</tr>
+<tr>
+<td>25</td>
+<td>8</td>
+</tr>
+<tr>
+<td>18</td>
+<td>9</td>
+</tr>
+<tr>
+<td>21</td>
+<td>10</td>
+</tr>
+<tr>
+<td>25</td>
+<td>11</td>
+</tr>
+<tr>
+<td>21</td>
+<td>12</td>
+</tr>
+<tr>
+<td>16</td>
+<td>13</td>
+</tr>
+<tr>
+<td>18</td>
+<td>14</td>
+</tr>
+<tr>
+<td>17</td>
+<td>15</td>
+</tr>
+<tr>
+<td>28</td>
+<td>16</td>
+</tr>
+<tr>
+<td>27</td>
+<td>17</td>
+</tr>
+<tr>
+<td>9</td>
+<td>18</td>
+</tr>
+<tr>
+<td>27</td>
+<td>19</td>
+</tr>
+<tr>
+<td>16</td>
+<td>20</td>
+</tr>
+<tr>
+<td>9</td>
+<td>21</td>
+</tr>
+<tr>
+<td>16</td>
+<td>22</td>
+</tr>
+<tr>
+<td>16</td>
+<td>23</td>
+</tr>
+<tr>
+<td>4</td>
+<td>24</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -9040,10 +9145,7 @@ ENST00000373176</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>I would start by adding Indexes on join keys. I would focus on the columns mainly used, and create indexes.
-We can partition the data base on smaller subset if the queries allows it.
-Some large data base like Mgnify for example, made the choice to stores their data in format like parquet allowing larger datasets.
-A view could also be used.</p>
+<p>I would start by adding indexes on join keys. I would focus on the columns mainly used, and create indexes. We can partition the database in smaller subsets if the queries allow it. Some large databases like Mgnify for example, made the choice to store their data in formats like parquet allowing larger datasets. A view could also be used.</p>
 </div>
 </div>
 </div>
@@ -9065,7 +9167,7 @@ A view could also be used.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>A Unique index can be created, or a unique constraint.</p>
+<p>A unique index can be created, or a unique constraint.</p>
 </div>
 </div>
 </div>
@@ -9087,7 +9189,28 @@ A view could also be used.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>A foreign key need to be set between the two table.</p>
+<p>A foreign key needs to be set between the two tables.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c02b2efd">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Feedback-:">Feedback :<a class="anchor-link" href="#Feedback-:">¶</a></h3><p>The tasks review a large panel of common use case in a day to day. The questions are clear and well made.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6921a931">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 </div>
 </div>
 </div>
